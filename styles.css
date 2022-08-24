@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-size: 16px;
+  color: white;
+}
+
+body {
+  background: url(./images/back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+  max-width: 1200px;
+}
+
+nav ul {
+  font-size: 3em;
+  display: flex;
+  max-width: 1000px;
+  list-style: none;
+}
+
+nav ul li {
+  text-shadow: rgba(0, 0, 0, 0.5) 1px 0 10px;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button a {
+  color: rgb(203, 130, 144);
+}
+
+button a:hover {
+  color: white;
+}
+nav ul li a:hover {
+  color: rgb(203, 130, 144);
+  text-shadow: 0, 0, 0, 0.14;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.start {
+  font-weight: 500;
+  width: 90%;
+  max-width: 600px;
+  height: 600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.start > div {
+  font-weight: 600;
+  color: rgb(203, 130, 144);
+}
+
+.start .invite {
+  font-weight: 500;
+  padding: 3em 0;
+  font-size: 3vh;
+}
+
+.start .names {
+  padding-top: 10px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 6vh;
+}
+
+.line {
+  background-color: rgb(203, 130, 144);
+  height: 60px;
+  margin: 10px;
+  width: 1px;
+}
+
+.start .date-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.start .date-info > div {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  color: rgb(203, 130, 144);
+}
+
+.start .date-info .date {
+  font-size: 30px;
+  padding: 20px;
+}
+
+.start .date-info .place {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+button {
+  margin: 40px;
+  font-weight: 400;
+  background-color: white;
+  color: rgb(203, 130, 144);
+  padding: 10px;
+  border: 2px solid rgb(203, 130, 144);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(203, 130, 144);
+  color: white;
+  cursor: pointer;
+}
+
+.start .text {
+  font-weight: 400;
+  padding: 20px;
+}
+
+.more-1 {
+  margin-top: 80px;
+  background-color: rgb(228, 171, 182);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.more {
+  margin: 0 auto;
+  width: 500px;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr;
+  grid-template-rows: 50px 1fr;
+  grid-template-areas: "title title title" "ceremony line party";
+}
+
+.more .info {
+  color: white;
+}
+
+.more .line {
+  background-color: white;
+  grid-area: line;
+  height: 150px;
+  position: relative;
+  top: 20px;
+}
+
+.more > div h3,
+h4 {
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+.info {
+  color: rgb(203, 130, 144);
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  grid-area: title;
+}
+
+.ceremony {
+  color: rgb(203, 130, 144);
+  text-align: center;
+  padding: 10px;
+  grid-area: ceremony;
+}
+
+.party {
+  color: rgb(203, 130, 144);
+  text-align: center;
+  padding: 10px;
+  grid-area: party;
+}
+
+.way {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.way h3 {
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 500;
+  padding: 10px;
+  padding-top: 50px;
+  color: rgb(228, 171, 182);
+}
+
+.map {
+  padding-bottom: 50px;
+  width: 500px;
+  height: 500px;
+}
+
+.form {
+  background: url(./images/back2.jpg);
+  width: 100vw;
+  background-size: cover;
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form h3 {
+  text-align: center;
+  padding: 20px;
+  font-weight: 200;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form form input {
+  color: rgb(203, 130, 144);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 20px;
+  outline: none;
+  border: rgb(203, 130, 144);
+}
+
+input[type="radio"] {
+  color: rgb(203, 130, 144);
+  border-color: rgb(203, 130, 144);
+}
+
+@media (max-width: 800px) {
+  .start,
+  main,
+  .more {
+    width: 100%;
+  }
+
+  nav {
+    padding: 15px;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .map {
+    width: 60%;
+  }
+
+  .way .map {
+    display: flex;
+    justify-content: center;
+  }
+
+  .way .map iframe {
+    width: 80vw;
+    overflow: hidden;
+  }
+
+  .more .line {
+    display: none;
+  }
+  .more {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 10px 1fr;
+    grid-template-areas: "title title title" "ceremony ceremony ceremony" "line line line" "party party party";
+  }
+}
+
+@media (max-width: 600px) {
+  .form form {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
